@@ -32,20 +32,6 @@ export class forms extends Component {
   render() {
     return (
       <Container>
-          <div>
-          {
-                
-                <div className='p-3'>
-                    You are Submitting the following: 
-                    <ul>
-                        
-                        {Object.entries(this.state.body).map(([name,value]) => (
-                            <li key={name}><strong>{name}</strong>: {value.toString()} </li>
-                        ))}
-                    </ul>
-                </div>
-            }
-          </div>
         <form onSubmit={this.handleSubmit} >  
           
             <label htmlFor="firstName">
