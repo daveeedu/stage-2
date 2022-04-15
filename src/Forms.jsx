@@ -34,8 +34,8 @@ export class forms extends Component {
   render() {
     return (
       <Container>
-          <h1 className="text-center text-secondary mt-4">SIMPLE FORM</h1>
-          <Card style={{ width: "18rem" }} className="bg-light text-danger m-auto">
+          <h1 className="text-center text-secondary my-5">SIMPLE FORM</h1>
+          <Card style={{ width: "18rem" }} className="bg-light text-danger m-auto shadow-lg">
     <Card.Body>
       <Card.Title>Full Name: {this.state.firstName} {this.state.lastName}</Card.Title>
       <Card.Text>
@@ -49,7 +49,7 @@ export class forms extends Component {
           </Card.Text>
           </Card.Body>
           </Card>
-        <form onSubmit={this.handleSubmit} className="0 h-100 m-auto my-5 p-5 border border-2 bg-secondary" style={{width: "80%"}} >  
+        <form onSubmit={this.handleSubmit} className="0 h-100 m-auto my-5 p-5 border border-2 bg-secondary shadow" style={{width: "80%"}} >  
           
             <label htmlFor="firstName" className="w-100 "> 
                 <div className="my-3 ">Name</div>
