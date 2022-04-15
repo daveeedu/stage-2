@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container } from "react-bootstrap"
+import { Card, Container } from "react-bootstrap"
 
 export class forms extends Component {
   constructor(props) {
@@ -22,9 +22,11 @@ export class forms extends Component {
     this.setState(body);
   }
 
+  
 
   handleSubmit = (event) => {
     console.log(this.state);
+      alert('form submitted');
       event.preventDefault();
   }
 
@@ -33,6 +35,20 @@ export class forms extends Component {
     return (
       <Container>
           <h1 className="text-center text-secondary mt-4">SIMPLE FORM</h1>
+          <Card style={{ width: "18rem" }} className="bg-light text-danger m-auto">
+    <Card.Body>
+      <Card.Title>Full Name: {this.state.firstName} {this.state.lastName}</Card.Title>
+      <Card.Text>
+        Email: {this.state.email}
+      </Card.Text>
+      <Card.Text>
+        Gender: {this.state.gender}
+        </Card.Text>
+        <Card.Text>
+          Bio: {this.state.bio}
+          </Card.Text>
+          </Card.Body>
+          </Card>
         <form onSubmit={this.handleSubmit} className="0 h-100 m-auto my-5 p-5 border border-2 bg-secondary" style={{width: "80%"}} >  
           
             <label htmlFor="firstName" className="w-100 "> 
