@@ -32,13 +32,13 @@ export class forms extends Component {
   render() {
     return (
       <Container>
-        <form onSubmit={this.handleSubmit} >  
+        <form onSubmit={this.handleSubmit} className="0 h-100 m-auto my-5 p-5 border border-2 bg-secondary" style={{width: "80%"}} >  
           
-            <label htmlFor="firstName">
-                <div>Name</div>
+            <label htmlFor="firstName" className="w-100 "> 
+                <div className="my-3 ">Name</div>
                 <input
               type="text"
-              className="form-control"
+              className="form-control border-0 bg-light text-black"
               id="firstName"
               name="firstName"
               placeholder="First Name"
@@ -48,11 +48,11 @@ export class forms extends Component {
             
           
           
-            <label htmlFor="lastName">
-                <div>Last Name</div>
+            <label htmlFor="lastName" className="w-100">
+                <div className="my-3">Last Name</div>
                 <input
               type="text"
-              className="form-control"
+              className="form-control border-0 bg-light text-black"
               id="lastName"
               name="lastName"
               placeholder="Last Name"
@@ -60,11 +60,11 @@ export class forms extends Component {
             />
             </label>
             
-            <label htmlFor="email">
-                <div>Email</div>
+            <label htmlFor="email" className="w-100">
+                <div className="my-3">Email</div>
                 <input
               type="email"
-              className="form-control"
+              className="form-control border-0 bg-light text-black"
               id="email"
               name="email"
               placeholder="Email"
@@ -72,15 +72,15 @@ export class forms extends Component {
             />
             </label>
             
-            <label htmlFor="gender">
-                <div>Gender</div>
-                <input type="text" name="gender" className="form-control" id="gender"  onChange={this.handleChange} />
+            <label htmlFor="gender" className="w-100">
+                <div className="my-3"> Gender</div>
+                <input type="text" name="gender" className="form-control border-0 bg-light text-black" id="gender"  onChange={this.handleChange} />
             </label>
             
           
-            <label htmlFor="bio">
-                <div>Bio</div>
-                <textarea className="form-control" name="bio" id="biog" rows="3" onChange={this.handleChange}></textarea>
+            <label htmlFor="bio" className="w-100">
+                <div className="my-3">Bio</div>
+                <textarea className="form-control border-0 bg-light text-black" name="bio" id="biog" rows="3" onChange={this.handleChange}></textarea>
             </label>
             
           
