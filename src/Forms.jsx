@@ -32,6 +32,7 @@ export class forms extends Component {
   render() {
     return (
       <Container>
+          <h1 className="text-center text-secondary">SIMPLE FORM</h1>
         <form onSubmit={this.handleSubmit} className="0 h-100 m-auto my-5 p-5 border border-2 bg-secondary" style={{width: "80%"}} >  
           
             <label htmlFor="firstName" className="w-100 "> 
